@@ -32,71 +32,72 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # 项目布局
 <pre>
 |──build                        //webpack 配置文件
-|——config                       //项目配置文件
-|——dist                         //项目上线文件
-|——src                          //源码目录
-|   |——api                      //接口文件
-|   |   |——appdata.js           //定义api接口
-|   |   |——base.js              //接口域名管理
-|   |   └──index.js             //api接口出口
-|   |——assets                   //暂定
-|   |——components               //公共组件
-|   |     |——footer 
-|   |     |  └── footer.vue     //底部公共组件 
-|   |     |—— header
-|   |     |    └── header.vue  //头部公共组件   
-|   |     └──common             
-|   |     |    └──popup.vue     //弹出提醒    
-|   |——config                   //基本配置
-|   |    |——mUtils.js           // 存储获取localstorage
-|   |    |——rem.js              //px转换rem
-|   |——page                     //项目页面
+|──config                       //项目配置文件
+|──dist                         //项目上线文件
+|──src                          //源码目录
+|   |──api                      //接口文件
+|   |   |──appdata.js           //定义api接口
+|   |   |──base.js              //接口域名管理
+|   |   └─index.js             //api接口出口
+|   |──assets                   //暂定
+|   |──components               //公共组件
+|   |     |──footer 
+|   |     |  └─ footer.vue     //底部公共组件 
+|   |     |── header
+|   |     |    └─ header.vue  //头部公共组件   
+|   |     └─common             
+|   |     |    └─popup.vue     //弹出提醒    
+|   |──config                   //基本配置
+|   |    |──mUtils.js           // 存储获取localstorage
+|   |    |──rem.js              //px转换rem
+|   |──page                     //项目页面
 |   |    |──address             //地址页
-|   |    |    |——children
-|   |    |    |      └──addAddress.vue   //添加地址页
-|   |    |    └──address-list.vue   //地址列表页
-|   |    |——cartpay             
-|   |    |    └──cartpay.vue    //购物车页
-|   |    |——details             
-|   |    |    └──details.vue    //商品详情页
-|   |    |——index               
-|   |    |    └──index.vue      //首页
-|   |    |——list                
-|   |    |    └──list.vue       //二级分类，搜索页
-|   |    |——login               
-|   |    |    └──login.vue      //登录页
-|   |    |——my 
-|   |    |  |—— children
-|   |    |  |      └──collection.vue   //收藏
-|   |    |  └──my.vue          //个人中心页
+|   |    |    |──children
+|   |    |    |      └─addAddress.vue   //添加地址页
+|   |    |    └─address-list.vue   //地址列表页
+|   |    |──cartpay             
+|   |    |    └─cartpay.vue    //购物车页
+|   |    |──details             
+|   |    |    └─details.vue    //商品详情页
+|   |    |──index               
+|   |    |    └─index.vue      //首页
+|   |    |──list                
+|   |    |    └─list.vue       //二级分类，搜索页
+|   |    |──login               
+|   |    |    └─login.vue      //登录页
+|   |    |──my 
+|   |    |  |──children
+|   |    |  |      └─collection.vue   //收藏
+|   |    |  └─my.vue          //个人中心页
 |   |    |      
 |   |    |   
-|   |    |——order               
-|   |    |    └──order.vue      //订单结算页
-|   |    |——orderlist           //订单列表页
-|   |    |      |——children  
-|   |    |      |     └──detail.vue   //订单详情页
-|   |    |      └──orderlist.vue 
-|   |    |——pay                 
-|   |    |   └──pay.vue         //订单支付页
+|   |    |──order               
+|   |    |    └─order.vue      //订单结算页
+|   |    |──orderlist           //订单列表页
+|   |    |      |──children  
+|   |    |      |     └─detail.vue   //订单详情页
+|   |    |      └─orderlist.vue 
+|   |    |──pay                 
+|   |    |   └─pay.vue         //订单支付页
 |   |——plugins                  //项目js插件
-|   |    └──swiper.min.js        //轮播插件
+|   |    └─swiper.min.js        //轮播插件
 |   |——router                   //路由
-|   |    └──index.js            
+|   |    └─index.js            
 |   |——stroe                    //vuex状态管理
-|   |    |——action.js          //配置action
-|   |    |——getters.js         //配置getters.vue
-|   |    |——index.js            //引用vuex，创建store
-|   |    |——mutation-types.js    // 定义常量muations名
-|   |    └──mutations.js         //配置mutations
+|   |    |──action.js          //配置action
+|   |    |──getters.js         //配置getters.vue
+|   |    |──index.js            //引用vuex，创建store
+|   |    |──mutation-types.js    // 定义常量muations名
+|   |    └─mutations.js         //配置mutations
 |   |——style                    
-|   |    |——common.scss          //公共样式
-|   |    |——mixin.scss           // 样式配置文件
-|   |    └──swiper.min.css      //swiper插件样式
+|   |    |──common.scss          //公共样式
+|   |    |──mixin.scss           // 样式配置文件
+|   |    └─swiper.min.css      //swiper插件样式
 |   |——utils                    //封装axios
-|   |    └──http.js              
+|   |    └─http.js              
 |   |——App.vue                  //页面入口文件
 |   |——main.js                  //程序入口文件，加载各种公共组件
+|──static  //项目图片
 </pre>
 在vue 使用过程中所遇到的问题及一些解决方法
 vue post 请求变成option
@@ -210,6 +211,7 @@ await写在async函数里，还是报错
 select  option默认选中
 select  v-model 设置默认 
 this.refundval=res.data.data[0].reason_name;   将第一个赋值给v-model
+
 
 
 
