@@ -30,6 +30,7 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 # 项目布局
+<pre>
 |──build                        //webpack 配置文件
 |——config                       //项目配置文件
 |——dist                         //项目上线文件
@@ -96,7 +97,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 |   |    └──http.js              
 |   |——App.vue                  //页面入口文件
 |   |——main.js                  //程序入口文件，加载各种公共组件
-
+</pre>
 在vue 使用过程中所遇到的问题及一些解决方法
 vue post 请求变成option
 当不在同一个域名下时，访问接口需要跨域，然而在跨域时，浏览器会默认动帮你发一个OPTIONS请求，到服务器端请求服务器确认该请求的合法性，在这一过程中，可能发送的参数后端接收不到，这时需要使用引入qs将参数url进行转换
@@ -209,5 +210,7 @@ await写在async函数里，还是报错
 select  option默认选中
 select  v-model 设置默认 
 this.refundval=res.data.data[0].reason_name;   将第一个赋值给v-model
+
+
 
 
